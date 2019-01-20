@@ -1,0 +1,46 @@
+
+#############Scrapy模块的安装##########
+0.确保网络情况良好
+
+1.升级pip(建议网络安装)
+python -m pip install --upgrade pip
+
+2.安装wheel(建议网络安装)
+pip install wheel
+
+3.安装lxml(下载安装)
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml
+pip install lxml-4.3.0-cp36-cp36m-win_amd64.whl
+
+4.安装Twisted(下载安装)
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#Twisted
+pip install Twisted-18.9.0-cp36-cp36m-win_amd64.whl
+
+5.安装scrapy(建议网络安装)
+pip install scrapy或pip install scrapy==1.1.0rc3
+
+6.安装pywin32并并配置(建议下载安装)为了确保项目安装成功
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32
+pip install pywin32-224-cp36-cp36m-win_amd64.whl
+pip install pywin32_ctypes-0.2.0-py3-none-any.whl
+对pywin32进行配置：
+复制下面路径的两个文件
+C:\Program Files (x86)\Python\Python36\Lib\site-packages\pywin32_system32
+pythoncom36.dll
+pywintypes36.dll
+到
+C:\Windows\System32
+因为防止没有权限复制，所以需要手动复制
+
+------End-------
+到此，Scrapy模块安装完成
+
+############Scrpy常用指令实战##############
+Scrpy一般通过指令管理爬虫项目，常用的指令有：
+startproject 【创建爬虫项目】
+genspider -l 【查看爬虫模板】
+genspider -t 模板 爬虫文件名 域名 【创建爬虫】
+crawl【运行爬虫】
+list【查看有哪些爬虫】
+
+
